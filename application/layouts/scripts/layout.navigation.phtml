@@ -1,0 +1,21 @@
+<ul class="nav">
+	<li class="active"><a href="<?php echo $this->url(array("controller" => "Index", "action" => "index"));?>">Home</a></li>
+	<li><a href="<?php echo $this->url(array("controller" => "Quiz", "action" => "list"));?>">Quizzes</a></li>
+	<?php if(!Application_Model_User::getCurrentUser()):?>
+	<li><a href="<?php echo $this->url(array("controller" => "Login", "action" => "index"));?>">Login</a></li>
+	<?php endif; ?>
+</ul>
+
+<?php if(Application_Model_User::getCurrentUser()):?>
+<div class="pull-right">
+	<ul class="nav">
+		<li><a href="#">Howdy, <?php echo Application_Model_User::getCurrentUser()->strName?></li></a>
+		<li><a href="<?php echo $this->url(array("controller" => "Login", "action" => "logout"));?>">Log out</a></li>
+	</ul>
+</div>
+<?php else: ?>
+	<form action="<?php echo $this->url(array("controller" => "Login", "action" => "index"));?>" method="post" class="pull-right">
+		<input class="input-small" type="text" name="emailaddress" placeholder="you@email.com">
+		<button class="btn" type="submit">Sign in</button>
+	</form>
+<?php endif; ?>

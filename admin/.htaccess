@@ -1,0 +1,11 @@
+AuthUserFile "C:\wampServer\www\MattsQuizThing\admin\.htpasswd"
+AuthType Basic
+AuthName "Matt's Quiz Thing - Admin"
+Require valid-user
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} -s [OR]
+RewriteCond %{REQUEST_FILENAME} -l [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^.*$ - [NC,L]
+RewriteRule ^.*$ index.php [NC,L]

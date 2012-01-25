@@ -1,0 +1,28 @@
+<XML>
+	<cblocks>
+		<cblock>
+			<gblock width="11" classes="top-message">
+				<heading>Blank</heading>
+			</gblock>
+			<gblock width="5"></gblock>
+			<gblock width="16" classes="blog-page">
+				<heading>This is the heading</heading>
+				<subheading>This is the subheading</subheading>
+				<text>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam in aliquet nulla. Aenean eu enim quis nisl imperdiet faucibus. Donec vehicula porta fermentum. Suspendisse ac mauris posuere est accumsan congue sed quis diam. Donec enim libero, consectetur quis lacinia at, dignissim sed dui. Fusce in libero et odio placerat tincidunt. Nulla turpis mi, luctus at tempus non, sodales eu quam. Duis elit enim, tempor ut feugiat eu, fringilla non nisi. Aliquam vel erat sed magna ornare ultrices at id purus.
+
+				Etiam eget vehicula justo. Praesent ut pharetra arcu. Nam mollis molestie lacus sit amet auctor. Aenean dapibus magna id lacus lobortis pulvinar. Vestibulum sit amet lectus neque, eget pulvinar ipsum. Aliquam mollis, dolor vitae pulvinar ultrices, arcu felis consequat metus, tempus pretium massa neque sit amet lacus. Quisque quis tincidunt mauris. Nunc laoreet suscipit diam dictum consequat. Ut adipiscing velit tristique mauris ultrices auctor. Etiam euismod lacinia elementum. Proin sit amet dolor ut arcu vestibulum aliquam.
+
+				Morbi id ipsum lorem, id consectetur mi. Nullam non felis eget nibh sagittis imperdiet at nec nisi. Nunc porttitor augue arcu. In luctus mollis purus, id rhoncus risus pellentesque id. Quisque tincidunt dictum elementum. Nullam et mauris sed urna varius pharetra. Praesent nulla neque, semper eu porttitor at, congue eu magna. Cras rutrum ornare massa ut tincidunt. Nullam mollis, neque fringilla pretium pellentesque, lorem neque sollicitudin quam, ac pretium libero lacus ac justo. Sed ac leo dui, volutpat eleifend odio. Integer id nisl nibh, sed sagittis lectus. Duis justo quam, interdum ac egestas in, laoreet a sem.
+
+				Morbi sodales enim non ligula elementum et interdum massa mattis. Duis pellentesque urna faucibus lorem suscipit sagittis ut pharetra velit. Aenean sit amet lorem diam, convallis tincidunt nulla. In facilisis dapibus porta. Phasellus mauris sem, tincidunt et euismod vel, vulputate et ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam sollicitudin lectus ut velit sagittis id congue est adipiscing. Pellentesque et est et lacus facilisis facilisis.
+
+				Phasellus vestibulum tristique tortor eu tincidunt. Curabitur pellentesque vulputate metus a ullamcorper. Curabitur nibh mauris, mattis sit amet egestas eget, dignissim a leo. Sed lorem velit, porttitor a aliquet in, posuere sollicitudin ligula. Aliquam dapibus sagittis eros eu lacinia. Proin non purus urna, gravida cursus ante. Maecenas gravida ullamcorper felis, ac porta lectus volutpat nec. Sed vel dictum dolor. Nulla ut odio nibh. Donec orci sapien, scelerisque at consequat in, interdum at purus. Duis id eros eros. Ut molestie fringilla tortor, pharetra laoreet nisi venenatis non. 
+				</text>
+			</gblock>
+			
+		</cblock>
+		
+	
+	</cblocks>
+</XML>

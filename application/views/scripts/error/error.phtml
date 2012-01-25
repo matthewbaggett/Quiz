@@ -1,0 +1,30 @@
+<div class="content">
+	<div class="page-header">
+		<h1>Well, this is embarassing <small>Something fell over</small></h1>
+	</div>
+	<div class="row">
+		<div class="span14">
+			<h2>An error occurred: <?php echo $this->message ?></h2>
+		</div>
+	</div>
+	<div class="row">
+		<div class="span6">
+			<img class="thumbnail-left" alt="" src="http://placekitten.com/g/300/400">
+		</div>
+		<div class="span8">
+		    <?php if (isset($this->exception)): ?>
+			
+			<h3>Exception information:</h3>
+			<p>
+				<b>Message:</b> <?php echo $this->exception->getMessage() ?>
+			</p>
+			
+			<h3>Stack trace:</h3>
+			<pre class="smalls"><?php echo $this->exception->getTraceAsString() ?></pre>
+			  
+			<h3>Request Parameters:</h3>
+			<pre class="smalls"><?php echo var_export($this->request->getParams(), true) ?></pre>
+			<?php endif ?>
+		</div>
+	</div>
+

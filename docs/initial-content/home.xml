@@ -1,0 +1,101 @@
+<XML>
+	<cblocks>
+		<cblock>
+			<gblock width="11" classes="top-message">
+				<heading>We are OddJob!</heading>
+			</gblock>
+			<gblock width="5"></gblock>
+			<gblock width="16">
+				<carousel>
+					<slides>
+						<slide><link>#</link><image>http://placekitten.com/919/323</image></slide>
+						<slide><link>#</link><image>http://placekitten.com/919/324</image></slide>
+						<slide><link>#</link><image>http://placekitten.com/919/325</image></slide>
+						<slide><link>#</link><image>http://placekitten.com/919/326</image></slide>
+					</slides>
+				</carousel>
+			</gblock>
+			<gblock width="12" id="hotnews-style" classes="hotnews-homepage">
+				<heading><img alt="" src="image/theme/hotnews.png"/>Hot News</heading>
+				<links id="news" class="innerfade">
+					<link url="/about/client">You're just too busy to go to the post office. Get someone else to go!</link>
+					<link url="/about/vendor">Want to make some extra cash in your free time running errands? Apply now</link>
+					<link url="/about/jsa">Compatable with JSA!</link>
+				</links>
+			</gblock>
+			<gblock width="4" id="login-signup">
+				<text mode="raw">
+					<a href="/login" id="homepage-login-button" class="green-button"><span class="green-right">&#160;</span><img src="image/theme/login-icon.png" alt="" class="button-icon"  /> Login</a>
+  					<a href="/login/register" id="homepage-signup-button" class="red-button"><span class="red-right">&#160;</span><img src="image/theme/icon-signup.png" alt="" class="button-icon"  /> Signup</a>
+				</text>
+			</gblock>
+		</cblock>
+		
+		
+		<cblock>
+			<gblock width="16">
+				<tileblock>
+					<tiles>
+						<tile>
+							<heading>Block 1</heading>
+							<image>http://placekitten.com/220/115</image>
+							<text>This is block one</text>
+							<link>
+								<url>#</url>
+								<label>Link</label>
+								<icon>icon1.png</icon>
+							</link>
+						</tile>
+						<tile>
+							<heading>Block 2</heading>
+							<image>http://placekitten.com/220/116</image>
+							<text>Lookatakitten :D</text>
+							<link>
+								<url>#</url>
+								<label>Link</label>
+							</link>
+						</tile>
+						<tile>
+							<heading>Block 3</heading>
+							<image>http://placekitten.com/220/117</image>
+							<text>D'awwwr</text>
+							<link>
+								<url>#</url>
+								<label>Link</label>
+							</link>
+						</tile>
+						<tile>
+							<heading>Block 4</heading>
+							<image>http://placekitten.com/220/118</image>
+							<text>Int it quooot!</text>
+							<link>
+								<url>#</url>
+								<label>Link</label>
+								<icon>icon1.png</icon>
+							</link>
+						</tile>
+						<tile>
+							<heading>Block 5</heading>
+							<image>http://placekitten.com/220/119</image>
+							<text>Meow!</text>
+							<link>
+								<url>#</url>
+								<label>Link</label>
+							</link>
+						</tile>
+						<tile>
+							<heading>Block 6</heading>
+							<image>http://placekitten.com/220/120</image>
+							<text>Mew~</text>
+							<link>
+								<url>#</url>
+								<label>Link</label>
+								<icon>icon2.png</icon>
+							</link>
+						</tile>
+					</tiles>
+				</tileblock>
+			</gblock>
+		</cblock>
+	</cblocks>
+</XML>

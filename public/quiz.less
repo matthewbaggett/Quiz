@@ -1,0 +1,48 @@
+.quiz{
+	.question{
+		&.answered{
+			border: 1px solid #F7C500;
+			background-color: #F9ECBD;
+			padding-top: 10px;
+			padding-bottom: 10px; 
+		}
+		margin-bottom: 20px;
+		.question_text{
+			font-style: italic;
+			margin-bottom: 15px;
+		}
+		.answers{
+			dl{
+				dd{
+					float: left;
+					display: block;
+					input{
+						float: left; 
+						display: block;
+					}
+					label{
+						float: left; 
+						display: block;
+						width: auto;
+						padding-top: 0;
+						margin-left: 10px;
+					}
+				}
+				dt{
+					float: left;
+					clear: left;
+					display: block;
+					min-width: 20px;
+					
+				}
+			}
+		}
+	}
+}
+
+pre{
+	&.smalls{
+		font-size: 9px;
+		line-height: 12px;
+	}
+}

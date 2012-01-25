@@ -1,0 +1,14 @@
+<div class="content">
+	<div class="page-header">
+		<h1>Show <em>ALL</em> the quizzes</h1>
+	</div>
+	<div class="row">
+		<div class="span14">
+			<ul>
+				<?php foreach($this->arr_quizzes as $obj_quiz):?>
+					<li><a href="<?php echo $this->url(array("controller" => "Quiz", "action" => "take", "quiz_id" => $obj_quiz->intQuizID));?>"><?php echo $obj_quiz->strQuizTitle?></a></li>
+				<?php endforeach; ?>
+			</ul>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,40 @@
+<div class="content">
+	<div class="page-header">
+		<h1>Admin:</h1>
+	</div>
+	<div class="row">
+		<div class="span10">
+			<h2>Users</h2>
+			<ul class="users">
+				<?php foreach($this->arr_users as $obj_user):?>
+				<?php $arr_quizzes_completed = $obj_user->get_quizzes_completed();?>
+				<li>
+					<dl>
+						<dt>Name:</dt>
+						<dd><?php echo $obj_user->strName?></dd>
+						<dt>Email:</dt>
+						<dd><?php echo $obj_user->strEmail?></dd>
+						<dt>Quizzes completed:</dt>
+						<dd><?php echo count($arr_quizzes_completed);?></dd>
+					</dl>
+					<ul class="quizzes">
+						<?php foreach($arr_quizzes_completed as $obj_quiz):?>
+						<li>
+							<span class="quiz_title"><?php echo $obj_quiz->strQuizTitle?>:</span>
+							<dl class="answers">
+								<?php foreach($obj_quiz->get_questions() as $obj_question):?>
+									<dt><?php echo $obj_question->strQuestion?></dt>
+									<dd><?php echo $obj_question->get_response()!=NULL?$obj_question->get_response():'No answer.'?>
+								<?php endforeach;?>
+							</dl>
+						</li>
+						<?php endforeach;?>
+					</ul>
+					<div class="clear"></div>
+				</li>
+				<?php endforeach;?>
+			</ul>
+		</div>
+		
+	</div>
+</div>

@@ -1,0 +1,10 @@
+<div class="content">
+	<div class="page-header">
+		<h1>Thanks! <small>You completed <?php echo $this->obj_quiz->strQuizTitle?>.</small></h1>
+	</div>
+	<div class="row">
+		<div class="span14">
+			<p>Now, go <a href="<?php echo $this->url(array("controller" => "Index", "action" => "index"), null, true);?>">home</a> or return to <a href="<?php echo $this->url(array("controller" => "Quiz", "action" => "take", "quiz_id" => $this->obj_quiz->intQuizID));?>"><?php echo $this->obj_quiz->strQuizTitle?></a>.</p>
+		</div>
+	</div>
+</div>

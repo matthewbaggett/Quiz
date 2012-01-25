@@ -1,0 +1,63 @@
+<?php $int_question_count = 1;?>
+<div class="content">
+	<div class="page-header">
+		<h1>Take - <?php echo $this->obj_quiz->strQuizTitle?></h1>
+	</div>
+	<form class="quiz" action="<?php echo $this->url(array("controller" => "Quiz", "action" => "submit"));?>" method="post">
+		<?php foreach($this->obj_quiz->get_questions() as $obj_question):?>
+			<?php $str_response_name = "question_" . $obj_question->intQuestionID ?>
+			<div class="row question <?php echo $obj_question->user_has_answered_before() > 0?'answered':'notanswered'?> ">
+				<div class="span14">
+					<h2>Question <?php echo $int_question_count?></h2>
+					<div class="question_text"><?php echo $obj_question->strQuestion?></div>
+					<?php if($obj_question->bolIsFreeform):?>
+						<div class="answers">
+							<?php
+							$str_value = '';
+							$obj_response = $obj_question->get_response();
+							if($obj_response){
+								$str_value = $obj_response->strAnswerValue;
+							}
+							?>
+							<textarea name="<?php echo $str_response_name?>"><?php echo $str_value?></textarea>
+						</div>
+					<?php else:?>
+						<div class="answers">
+							<dl>
+								<?php $int_answer_count = 0; ?>
+								<?php foreach($obj_question->get_answers() as $obj_answer):?>
+									
+									<?php $str_response_id = $str_response_name . "_answer_" . $obj_answer->intAnswerID ?>
+									<dt><?php echo strtoupper(base_convert($int_answer_count + 10,10,36)) ?>: </dt>
+									<dd>
+										<input 
+											type="radio" 
+											name="<?php echo $str_response_name?>" 
+											id="<?php echo $str_response_id?>" 
+											value="<?php echo $obj_answer->intAnswerID?>" 
+											<?php echo $obj_answer->is_pre_selected()?'checked="checked"':''?>
+											/>
+										<label for="<?php echo $str_response_id?>">
+											<?php echo $obj_answer->strAnswer; ?>
+										</label>
+									</dd>
+									<?php $int_answer_count++; ?>
+								<?php endforeach;?>
+							</dl>
+						</div>
+					<?php endif; ?>
+				</div>
+			</div>
+			<?php $int_question_count++;?> 
+		<?php endforeach;?>
+		<div class="row">
+			<div class="span10">
+				<h2>You're done! Hooray!</h2>
+			</div>
+			<div class="span4">
+				<input type="submit" value="Finish this quiz!"/>
+			</div>
+		</div>
+	</form>
+	
+</div>
