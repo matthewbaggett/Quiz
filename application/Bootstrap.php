@@ -11,9 +11,12 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 	protected function _initRouter ()
 	{
 		$autoloader = Zend_Loader_Autoloader::getInstance();
+		$autoloader->registerNamespace("Turbo_");
+		
 		if (PHP_SAPI == 'cli')
 	    {
 	    	$this->bootstrap ('frontcontroller');
+	    	
 	        Zend_Controller_Front::getInstance()->setParam('disableOutputBuffering', true);
 	    	$front = $this->getResource('frontcontroller');
 	        $front->setRouter (new Turbo_Router_Cli());

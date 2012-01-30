@@ -23,7 +23,9 @@
 			<pre class="smalls"><?php echo $this->exception->getTraceAsString() ?></pre>
 			  
 			<h3>Request Parameters:</h3>
-			<pre class="smalls"><?php echo var_export($this->request->getParams(), true) ?></pre>
+			
+			<?php Turbo_Lib_Krumo::dump($this->request->getParams()) ?>
+			
 			<?php endif ?>
 		</div>
 	</div>
